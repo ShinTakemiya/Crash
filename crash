@@ -1,0 +1,34 @@
+Crash :
+Picked up _JAVA_OPTIONS: 
+2022-07-06 22:48:24,484 main WARN Advanced terminal features are not available in this environment
+[22:48:24] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--username, ShinTakemiya, --version, 1.18.2-forge-40.1.54, --gameDir, C:\Users\user\AppData\Roaming\.minecraft, --assetsDir, C:\Users\user\AppData\Roaming\.minecraft\assets, --assetIndex, 1.18, --uuid, a617c57505294e36b0cc6454137af74a, --accessToken, ❄❄❄❄❄❄❄❄, --clientId, , --xuid, , --userType, mojang, --versionType, release, --width, 925, --height, 530, --launchTarget, forgeclient, --fml.forgeVersion, 40.1.54, --fml.mcVersion, 1.18.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220404.173914]
+[22:48:24] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 9.1.3+9.1.3+main.9b69c82a starting: java version 17.0.1 by Microsoft
+[22:48:24] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/user/AppData/Roaming/.minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2314!/ Service=ModLauncher Env=CLIENT
+Exception in thread "main" java.lang.IllegalArgumentException: version: Version string does not start with a number
+	at java.base/java.lang.module.ModuleDescriptor$Version.<init>(ModuleDescriptor.java:1005)
+	at java.base/java.lang.module.ModuleDescriptor$Version.parse(ModuleDescriptor.java:1090)
+	at java.base/java.lang.module.ModuleDescriptor$Builder.version(ModuleDescriptor.java:2062)
+	at MC-BOOTSTRAP/fmlloader@1.18.2-40.1.54/net.minecraftforge.fml.loading.moddiscovery.ModJarMetadata.descriptor(ModJarMetadata.java:72)
+	at cpw.mods.securejarhandler@1.0.3/cpw.mods.jarhandling.impl.Jar.computeDescriptor(Jar.java:47)
+	at cpw.mods.securejarhandler@1.0.3/cpw.mods.cl.JarModuleFinder$JarModuleReference.<init>(JarModuleFinder.java:50)
+	at cpw.mods.securejarhandler@1.0.3/cpw.mods.cl.JarModuleFinder.lambda$new$0(JarModuleFinder.java:28)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at cpw.mods.securejarhandler@1.0.3/cpw.mods.cl.JarModuleFinder.<init>(JarModuleFinder.java:29)
+	at cpw.mods.securejarhandler@1.0.3/cpw.mods.cl.JarModuleFinder.of(JarModuleFinder.java:43)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@9.1.3/cpw.mods.modlauncher.ModuleLayerHandler.buildLayer(ModuleLayerHandler.java:70)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@9.1.3/cpw.mods.modlauncher.TransformationServicesHandler.buildTransformingClassLoader(TransformationServicesHandler.java:60)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@9.1.3/cpw.mods.modlauncher.Launcher.run(Launcher.java:104)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@9.1.3/cpw.mods.modlauncher.Launcher.main(Launcher.java:77)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@9.1.3/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@9.1.3/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+	at cpw.mods.bootstraplauncher@1.0.0/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:149)
+Latest : 
+[06Jul2022 22:48:24.615] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--username, ShinTakemiya, --version, 1.18.2-forge-40.1.54, --gameDir, C:\Users\user\AppData\Roaming\.minecraft, --assetsDir, C:\Users\user\AppData\Roaming\.minecraft\assets, --assetIndex, 1.18, --uuid, a617c57505294e36b0cc6454137af74a, --accessToken, ❄❄❄❄❄❄❄❄, --clientId, , --xuid, , --userType, mojang, --versionType, release, --width, 925, --height, 530, --launchTarget, forgeclient, --fml.forgeVersion, 40.1.54, --fml.mcVersion, 1.18.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220404.173914]
+[06Jul2022 22:48:24.620] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 9.1.3+9.1.3+main.9b69c82a starting: java version 17.0.1 by Microsoft
+[06Jul2022 22:48:24.734] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/user/AppData/Roaming/.minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2314!/ Service=ModLauncher Env=CLIENT
